@@ -5,6 +5,8 @@ site_description: Documentation of PT Library
 
 nav:
   - About: index.md
+  - Usage : usage.md
+  - Contributor : contributor.md
 
 theme:
   name: readthedocs
