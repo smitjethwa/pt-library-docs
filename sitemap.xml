@@ -5,4 +5,14 @@
          <lastmod>2023-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://pypi.org/project/pt-library/contributor/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pypi.org/project/pt-library/usage/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
