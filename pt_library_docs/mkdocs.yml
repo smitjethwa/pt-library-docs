@@ -1,0 +1,13 @@
+site_name: PT Library Docs
+site_url: https://pypi.org/project/pt-library/
+site_author: Smit Jethwa
+site_description: Documentation of PT Library
+
+nav:
+  - About: index.md
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
