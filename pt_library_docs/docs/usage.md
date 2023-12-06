@@ -6,7 +6,8 @@ Sends a notification to the telegram channel.
 from pt_library import telegram_notification
 response = telegram_notification(token, chat_id, message)
 
-# response -> request.response
+# Params: token: str, chat_id: str, message:str 
+# Return: response: requests.models.Response
 ```
 
 ### Date-time
@@ -17,9 +18,9 @@ print(get_previous_month_year())
 print(get_current_month_year())
 print(get_timestamp())
 
-# ('11', '2023') -> tuple(str)
-# ('05', '12', '2023')->tuple(str)
-# 2023-12-05 16:34:05->str
+# {year: '2023',month: '11'}
+# {year: '2023',month: '12', day: '05'}
+# 2023-12-05 16:34:05       -> str
 ```
 
 ### SQL Queries
@@ -27,6 +28,9 @@ Executes SQL query and returns the result.
 ```python
 from pt_library import run_query
 result = run_query(host, user, password, database, query)
+
+# Params: host: str, user: str, password:str, database:str, query:str 
+# Return: tuple
 ```
 ### Decorators
 ###### Runtime calculation
