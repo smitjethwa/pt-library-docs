@@ -95,7 +95,8 @@
 <pre><code class="language-python">from pt_library import telegram_notification
 response = telegram_notification(token, chat_id, message)
 
-# response -&gt; request.response
+# Params: token: str, chat_id: str, message:str 
+# Return: response: requests.models.Response
 </code></pre>
 <h3 id="date-time">Date-time</h3>
 <p>There are two functions, which return current date and previous month date.</p>
@@ -104,14 +105,17 @@ print(get_previous_month_year())
 print(get_current_month_year())
 print(get_timestamp())
 
-# ('11', '2023') -&gt; tuple(str)
-# ('05', '12', '2023')-&gt;tuple(str)
-# 2023-12-05 16:34:05-&gt;str
+# {year: '2023',month: '11'}
+# {year: '2023',month: '12', day: '05'}
+# 2023-12-05 16:34:05       -&gt; str
 </code></pre>
 <h3 id="sql-queries">SQL Queries</h3>
 <p>Executes SQL query and returns the result.</p>
 <pre><code class="language-python">from pt_library import run_query
 result = run_query(host, user, password, database, query)
+
+# Params: host: str, user: str, password:str, database:str, query:str 
+# Return: tuple
 </code></pre>
 <h3 id="decorators">Decorators</h3>
 <h6 id="runtime-calculation">Runtime calculation</h6>
